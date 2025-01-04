@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
+
 interface IBlog {
   title: string;
   description: string;
@@ -15,15 +16,15 @@ export default async function BlogPage() {
   console.log(responce);
   return (
     <div className="flex flex-col items-center justify-center bg-[#000000]">
-      <h1 className="font-bold text-[37px] lg:text-[48px] text-yellow-400 mt-10 font-serif text-center">
+      <h1 className="font-bold text-[44px] lg:text-[48px] text-yellow-400 mt-10 font-serif text-center">
         Festivals of Pakistan
       </h1>
-      <p className="text-center font-medium text-[18px] sm:text-[18px] text-[#ffffff] lg:text-[22px] hover:underline underline-offset-8">
+      <p className="text-center font-medium text-[18px] sm:text-[18px] lg:text-[22px] hover:underline underline-offset-8 text-[#ffffff] ">
         Each festival in Pakistan tells a unique story.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 items-center justify-items-center p-4 h-auto max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 items-center justify-center p-4 h-auto max-w-6xl">
         {responce.map((data) => (
-          <Card key={data.title} className="shadow-md  flex flex-col">
+          <Card key={data.title} className="shadow-md flex flex-col">
             {data.poster && (
               <Image
                 src={urlFor(data.poster).url()}
