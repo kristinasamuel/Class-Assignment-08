@@ -21,8 +21,6 @@ export default async function BlogPage() {
       <p className="text-center font-medium text-[18px] sm:text-[18px] text-[#ffffff] lg:text-[22px] hover:underline underline-offset-8">
         Each festival in Pakistan tells a unique story.
       </p>
-
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 items-center justify-center p-4 h-auto"> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 items-center justify-items-center p-4 h-auto max-w-6xl">
         {responce.map((data) => (
           <Card key={data.title} className="shadow-md  flex flex-col">
