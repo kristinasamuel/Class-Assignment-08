@@ -15,7 +15,7 @@ export default async function BlogPage() {
   console.log(responce);
   return (
     <div className="flex flex-col items-center justify-center bg-[#000000]">
-      <h1 className="font-bold text-[38px] lg:text-[48px] text-yellow-400 mt-10 font-serif">
+      <h1 className="font-bold text-[37px] lg:text-[48px] text-yellow-400 mt-10 font-serif text-center">
         Festivals of Pakistan
       </h1>
       <p className="text-center font-medium text-[18px] sm:text-[18px] text-[#ffffff] lg:text-[22px] hover:underline underline-offset-8">
@@ -46,7 +46,7 @@ export default async function BlogPage() {
         ))}
       </div>
       <div className="mt-2 mb-5">
-        <p className="mt-20 text-yellow-300 text-[24px] text-center w-full lg:max-w-3xl">
+        <p className="mt-20 text-sky-300 text-[24px] text-center w-full lg:max-w-3xl">
           In Pakistan, festivals like melas and urs bring people together to
           celebrate our traditions. They show our country's religious and
           cultural unity.
